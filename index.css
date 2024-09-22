@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,109 +6,101 @@
     font-family: 'Times New Roman', Times, serif;
   }
   
-/* General Navbar Styling */
-nav {
-  background-color: #c3e4cb;
-  overflow: visible; /* Ensure the overflow is not hidden */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.logo
-{
-  font-weight: 800;
-  font-size: xx-large;
-  color: black;
-}
-
-
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar li {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-}
-
-.navbar a {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px grey;
-  font-size:medium;
-  font-weight: 700;
-}
-
-/* .navbar a:hover {
-  background-color: #575757;
-  color: white;
-} */
-
-/* Dropdown styling */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #c3e4cb;
-  min-width: 170px;
-  border-radius: 15px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999; /* Ensure the dropdown is on top */
-}
-
-.dropdown-content li {
-  display: block;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #575757;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Default Menu Styling */
-.menu-item {
-  color: black;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px grey;
-  font-size: medium;
-  font-weight: 700;
-}
-
-/* Highlighted (active) menu item */
-.menu-item.active {
-  background-color: #575757;
-  color: white;
-}
-
-
-     /* Home Section */
-.homepage {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  height: calc(100vh - 100px); /* Minus navbar height */
+  /* Navbar */
+  nav {
+    background-color: #c3e4cb;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -25px;
+  }
+  
+  .logo {
+    font-weight: 800;
+    font-size: xx-large;
+    color: black;
+    padding-left: 15px;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+    font-size:medium;
+    font-weight: 700;
+  }
+  
+  .navbar a:hover {
+    background-color: #575757;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c3e4cb;
+    min-width: 180px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999; /* Ensure the dropdown is on top */
+  }
+  
+  .dropdown-content li {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .menu-item {
+    color: #000;
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .menu-item.active {
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(240, 229, 229); /* Optional background highlight */
+  }
+  
+  /* Home Section /* Minus navbar height */
+  .homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: calc(100vh - 100px);
   background-color: #fff;
   padding-top: 90px;
 }
@@ -172,7 +165,6 @@ nav {
   }
 }
 
-
 /* About Section */
 
 .about-section
@@ -199,6 +191,7 @@ nav {
 .about-content
 {
   margin-left: 40px;
+  padding-top: 40px;
   width: 100%;
   opacity: 0;
   transform: translateX(100px);
@@ -206,8 +199,8 @@ nav {
 }
 .about-content h2
 {
-    font-size: 36px;
-    text-align: center;
+  font-size: 36px;
+  text-align: center;
 }
 .about-content p
 {
@@ -230,51 +223,30 @@ nav {
   }
 }
 
+/* Courses Section */
 
-
-      /* courses */
-/* Intro Section */
-
-.intro-section {
-  text-align: center;
-  background-color: #fff;
-  padding: 80px 20px;
-  
+.courses-section {
+  padding-top: 80px;
 }
-
-.section-title {
+.section-title1
+{
+  padding-left: 560px;
   font-size: 36px;
   margin-bottom: 20px;
 }
-.container
-{
-  display: flex;
-  flex-direction: column;
-  /* margin-left: 150px; */
-}
-
-.intro-text {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Cards Container */
 
 .cards-container {
   display: flex;
   justify-content: space-around;
-  padding: 50px;
-  margin-top: -70px;
-  background-color: #fff;
-  
+  flex-wrap: wrap; /* Allow cards to wrap to multiple lines on smaller screens */
+  background-color:rgb(240, 229, 229);
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 30px;
 }
 
-/* Course Cards */
 .card {
-  background-color: rgb(240, 229, 229);
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -283,8 +255,7 @@ nav {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
-  margin-right: 30px;
-
+  margin-bottom: 30px;
 }
 
 .card-image {
@@ -337,12 +308,10 @@ nav {
   animation: fadeInUp 1s ease forwards;
   animation-delay: var(--delay, 0s);
 }
-/* trainings */
 
-   
-     /* New Batches Section */
+/* New Batches Section */
 .new-batches-section {
-  padding: 10px;
+  padding-top: 80px;
   background-color: #fff;
   min-height: 100vh;
 }
@@ -367,15 +336,18 @@ nav {
 
 /* Batches Container */
 .batches-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+  background-color:rgb(240, 229, 229);
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 40px;
 }
 
 /* Batch Cards */
 .batch-card {
-  background-color: rgb(240, 229, 229);
+  background-color: white;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -384,6 +356,7 @@ nav {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
+  margin: 40px;
 }
 
 .batch-image img {
@@ -414,12 +387,12 @@ nav {
 /* Animations */
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -433,12 +406,9 @@ nav {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* job openings */
-
-  /* Job Openings Section */
 /* Job Openings Section */
 .job-openings-section {
-  padding: 20px;
+  padding-top: 80px;
   background-color: #fff;
   min-height: 100vh;
 }
@@ -450,139 +420,135 @@ nav {
 
 .section-title {
   font-size: 36px;
-  margin-bottom: 20px;
 }
-
-.intro-text {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Jobs Container */
-.jobs-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-}
-
-/* Job Cards */
-.job-card {
-  background-color: rgb(240, 229, 229);
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.job-card.animated {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.job-info {
-  padding: 20px;
-}
-
-.job-info h3 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.job-info p {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.job-content {
-  display: none;
-  font-size: 14px;
-  color: #666;
-  margin-top: 10px;
-}
-
-/* from here footer */
-.sticky-bottom
-{
-  background-color:  #c3e4cb;
-}
-.main_footer
-{
-  display: flex;
-  flex-direction: row;
-}
-.contact-info
-{
-  color: black;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.Icon_footer
-{
+  
+  .intro-text {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Jobs Container */
+  .jobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    background-color: rgb(240, 229, 229);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  /* Job Cards */
+  .job-card {
+    border-radius: 10px;
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .job-card.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .job-info {
+    padding: 20px;
+  }
+  
+  .job-info h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .job-info p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .job-content {
+    display: none;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  .sticky-bottom {
+    background-color: #c3e4cb;
+  }
+  
+  .main_footer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact-info {
+    color: black;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .Icon_footer {
     display: flex;
     flex-direction: row;
     padding-right: 30px;
     padding-left: 710px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-}
-.awesome1 a
-{
-    padding-left: 20px
-}
-.awesome1 i
-{
+  }
+  
+  .awesome1 a {
+    padding-left: 20px;
+  }
+  
+  .awesome1 i {
     font-size: 40px;
     color: #0A66c2;
-}
-.awesome2 a
-{
+  }
+  
+  .awesome2 a {
     padding-left: 20px;
-}
-.awesome2 i
-{
+  }
+  
+  .awesome2 i {
     font-size: 40px;
     color: #075E54;
-}
-.awesome3 a
-{
+  }
+  
+  .awesome3 a {
     padding-left: 20px;
-}
-.awesome3 i
-{
+  }
+  
+  .awesome3 i {
     font-size: 40px;
     color: rgb(21, 102, 214);
-}
-.awesome4 a
-{
+  }
+  
+  .awesome4 a {
     padding-left: 20px;
-}
-.awesome4 i
-{
+  }
+  
+  .awesome4 i {
     font-size: 40px;
     color: #d6249f;
-}
-.awesome5 a
-{
+  }
+  
+  .awesome5 a {
     padding-left: 20px;
-}
-.awesome5 i
-{
+  }
+  
+  .awesome5 i {
     font-size: 40px;
-    color: #0088cc; 
-}
-
-/* the footer ends here */
-
-
- 
+    color: #0088cc;
+  }
